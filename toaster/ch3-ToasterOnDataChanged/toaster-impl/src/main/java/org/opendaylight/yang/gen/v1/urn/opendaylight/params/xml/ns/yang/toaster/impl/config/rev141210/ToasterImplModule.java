@@ -28,7 +28,7 @@ public class ToasterImplModule extends org.opendaylight.yang.gen.v1.urn.opendayl
         ToasterImpl provider = new ToasterImpl();
         String logMsg = "Provider: " + provider.toString();
         LOG.info(logMsg);
-        getBindingAwareBrokerDependency().registerProvider(provider, null);
+        getBindingAwareBrokerDependency().registerProvider(provider);
         return provider;
     }
 
